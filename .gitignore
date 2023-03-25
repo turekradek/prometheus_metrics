@@ -6,4 +6,5 @@ ingest-statistics-monitoring-prod20.tar
 ingest-statistics-monitoring-prod27c.tar
 ingest-statistics-monitoring-prod37c.tar
 ingest-statistics-monitoring-prod37cc.tar
-
+cronjob.yml
+cronjob_curl.yml

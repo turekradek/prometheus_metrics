@@ -31,7 +31,7 @@ def run_session_gate_dag(airflow_url, username, password, dag_id , conf, run_id)
 
 # airflow_url = "https://airflow-prod.apps.devops.advantagedp.org/"
 airflow_url = "https://airflow-stg.apps.devops.advantagedp.org/"
-username = 'user'
+username = 'ingest_pipeline-s'
 password = '************'
 dag_id = 'session_gate'
 conf = {
@@ -66,6 +66,6 @@ run_id = f"{dag_id}_{time_now}_{conf['session_id']}_reprocessingg"
 run_session_gate_dag(airflow_url, username, password, dag_id , conf, run_id )
 
 
-# curl -u user:password -X POST https://airflow-stg.apps.devops.advantagedp.org/api/experimental/dags/devops_monitoring_failed_pods/dag_runs -d {}
+# curl -u ingest_pipeline-s:1Rt.d5WssojT.2 -X POST https://airflow-stg.apps.devops.advantagedp.org/api/experimental/dags/devops_monitoring_failed_pods/dag_runs -d {}
 # curl -u username:password -X POST https://airflow-stg.apps.devops.advantagedp.org/api/experimental/dags/devops_monitoring_failed_pods/dag_runs -d {}
 # -d {} # IS NECESSARY 
